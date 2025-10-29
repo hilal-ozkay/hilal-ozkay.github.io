@@ -1,2 +1,2 @@
-# hilal-ozkay.github.io
-"hilal-ozkay" Anasayfa
+# ADS352
+Ders için oluşturulmuş örnek depodur.
