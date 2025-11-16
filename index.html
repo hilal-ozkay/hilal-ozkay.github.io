@@ -5,104 +5,99 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADS-352 Web Sitesi Ödevi</title>
 <style>
-    body {
-        /* İstenen mavi arka plan rengi */
-        margin: 0;
-        padding: 0;
-        background-color: #6f89ab; /* Arkaplan rengi (Mavi tonu) */
-        font-family: "Times New Roman", serif;
-        color: #4c0000; /* Yazı rengi (Koyu Bordo/Kırmızı) */
-    }
+    /* BODY STYLES - Arka plan renginin ayarlandığı yer */
+    body {
+        margin: 0;
+        padding: 0;
+        /* İstenen mavi tonu */
+        background-color: #6f89ab; 
+        font-family: "Times New Roman", serif;
+        /* İstenen koyu bordo yazı rengi */
+        color: #4c0000; 
+    }
 
-    .container {
-        width: 100%;
-        text-align: center;
-        padding-top: 40px;
-    }
+    .container {
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
 
-    /* Kırmızı çerçeveli başlık kutusu */
-    .title-box {
-        display: inline-block;
-        padding: 20px 40px;
-        border: 6px double #4c0000; /* Koyu Bordo/Kırmızı çerçeve */
-        font-size: 22px;
-        line-height: 1.5;
-        font-weight: bold;
-        background-color: rgba(255,255,255,0.1); /* Hafif şeffaf arka plan */
-    }
+    /* BAŞLIK KUTUSU STYLES - Kırmızı çift çerçeve */
+    .title-box {
+        display: inline-block;
+        padding: 20px 40px;
+        border: 6px double #4c0000;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.1);
+    }
 
-    /* Yuvarlak logo alanı */
-    .logo-area {
-        width: 250px;
-        height: 250px;
-        /* background-color: #35a9db; / Mavi/Turkuaz iç rengi, logo ile şeffaf olmalı */
-        background-color: transparent; 
-        border: 3px solid #4c0000; /* Koyu Bordo/Kırmızı çerçeve */
-        border-radius: 50%;
-        margin: 50px auto 20px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden; /* Resmin dışarı taşmasını engeller */
-    }
+    /* LOGO ALANI STYLES - Yuvarlak, turkuaz iç renkli, kırmızı çerçeve */
+    .logo-area {
+        width: 250px;
+        height: 250px;
+        /* İstenen turkuaza yakın logo alan rengi (Görsel 2'deki gibi) */
+        background-color: #35a9db; 
+        border: 3px solid #4c0000;
+        border-radius: 50%;
+        margin: 50px auto 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: bold;
+        color: #4c0000;
+    }
 
-    /* Logoyu alana sığdırma */
-    .logo-area img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* Resmin alana tam oturmasını sağlar */
-        border-radius: 50%;
-        padding: 5px; /* Çerçeveden biraz içerde durması için boşluk */
-        box-sizing: border-box;
-    }
+    /* BİLGİ ALANI STYLES */
+    .info {
+        margin-top: 40px;
+        text-align: left;
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        line-height: 1.8;
+    }
 
-    /* Bilgi metni alanı */
-    .info {
-        margin-top: 40px;
-        text-align: left; /* Metni sola hizalar */
-        width: 420px; /* Belirtilen genişlik */
-        margin-left: auto; /* Ortalamak için */
-        margin-right: auto; /* Ortalamak için */
-        font-size: 20px;
-        line-height: 1.8;
-    }
-
-    @media (max-width: 600px) {
-        .info {
-            width: 90%;
-            font-size: 18px;
-        }
-        .logo-area {
-            width: 200px;
-            height: 200px;
-        }
-        .title-box {
-            font-size: 18px;
-            padding: 15px 20px;
-        }
-    }
+    /* RESPONSIVE AYARLAR */
+    @media (max-width: 600px) {
+        .info {
+            width: 90%;
+            font-size: 18px;
+        }
+        .logo-area {
+            width: 200px;
+            height: 200px;
+        }
+        .title-box {
+            font-size: 18px;
+            padding: 15px 20px;
+        }
+    }
 </style>
 </head>
 <body>
 
 <div class="container">
 
-    <div class="title-box">
-        ADS-352 <br>
-        2025-2026 GÜZ DÖNEMİ ÖDEVİ <br>
-        WEB SİTESİ OLUŞTURMA
-    </div>
+    <div class="title-box">
+        ADS-352 <br>
+        2025-2026 GÜZ DÖNEMİ ÖDEVİ <br>
+        WEB SİTESİ OLUŞTURMA
+    </div>
 
-    <div class="logo-area">
-        <img src="Gazi_Üniversitesi_logo.png" alt="Gazi Üniversitesi Logo">
-    </div>
+    <div class="logo-area">
+        LOGO
+    </div>
 
-    <div class="info">
-        * Hazırlayan: Ad - Soyad <br>
-        * Fakülte: Teknoloji Fakültesi <br>
-        * Bölüm: Elektrik Elektronik Mühendisliği <br>
-        * Sınıf: 4
-    </div>
+    <div class="info">
+        * Hazırlayan: Ad - Soyad <br>
+        * Fakülte: Teknoloji Fakültesi <br>
+        * Bölüm: Elektrik Elektronik Mühendisliği <br>
+        * Sınıf: 4
+    </div>
 
 </div>
 
