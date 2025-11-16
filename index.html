@@ -5,99 +5,125 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADS-352 Web Sitesi Ödevi</title>
 <style>
-    /* BODY STYLES - Arka plan renginin ayarlandığı yer */
     body {
         margin: 0;
         padding: 0;
-        /* İstenen mavi tonu */
-        background-color: #6f89ab; 
-        font-family: "Times New Roman", serif;
-        /* İstenen koyu bordo yazı rengi */
-        color: #4c0000; 
+        background-color: #f4f7f6; /* Açık gri/beyaz bir web sitesi arka planı */
+        font-family: Arial, sans-serif; /* Daha modern bir font */
+        color: #333; /* Genel yazı rengi */
+        line-height: 1.6;
     }
 
-    .container {
-        width: 100%;
+    /* HEADER ALANI */
+    .header {
+        background-color: #2c3e50; /* Koyu gri/mavi tonlu bir header */
+        color: #ecf0f1; /* Header yazısı için açık renk */
+        padding: 20px 0;
         text-align: center;
-        padding-top: 40px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Hafif bir gölge efekti */
     }
 
-    /* BAŞLIK KUTUSU STYLES - Kırmızı çift çerçeve */
+    .header h1 {
+        margin: 0;
+        font-size: 2.5em; /* Daha büyük başlık */
+        letter-spacing: 1px;
+    }
+
+    .header p {
+        margin: 5px 0 0;
+        font-size: 1.1em;
+        opacity: 0.8;
+    }
+
+    /* İÇERİK ALANI */
+    .content-section {
+        max-width: 800px; /* İçerik genişliğini sınırlar */
+        margin: 40px auto; /* Üstten ve alttan boşluk, yatayda ortalama */
+        padding: 30px;
+        background-color: #ffffff; /* İçerik kutusu için beyaz arka plan */
+        border-radius: 8px; /* Hafif yuvarlak köşeler */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Daha belirgin bir gölge */
+    }
+
+    /* BAŞLIK KUTUSU STYLES - Normal bir web sitesi başlığı gibi düzenledim */
     .title-box {
-        display: inline-block;
-        padding: 20px 40px;
-        border: 6px double #4c0000;
-        font-size: 22px;
-        line-height: 1.5;
-        font-weight: bold;
-        background-color: rgba(255,255,255,0.1);
+        text-align: center; /* Ortalar */
+        margin-bottom: 30px;
     }
 
-    /* LOGO ALANI STYLES - Yuvarlak, turkuaz iç renkli, kırmızı çerçeve */
-    .logo-area {
-        width: 250px;
-        height: 250px;
-        /* İstenen turkuaza yakın logo alan rengi (Görsel 2'deki gibi) */
-        background-color: #35a9db; 
-        border: 3px solid #4c0000;
-        border-radius: 50%;
-        margin: 50px auto 20px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 26px;
-        font-weight: bold;
-        color: #4c0000;
+    .title-box h2 {
+        font-size: 2em;
+        color: #34495e; /* Daha koyu bir başlık rengi */
+        border-bottom: 2px solid #3498db; /* Altında hafif bir çizgi */
+        padding-bottom: 10px;
+        display: inline-block; /* Çizginin sadece metin altına gelmesini sağlar */
+        margin: 0;
+    }
+    .title-box p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+        margin-top: 10px;
     }
 
     /* BİLGİ ALANI STYLES */
-    .info {
-        margin-top: 40px;
-        text-align: left;
-        width: 420px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        line-height: 1.8;
+    .info-list {
+        list-style: none; /* Liste işaretlerini kaldırır */
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .info-list li {
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        color: #555;
+        border-left: 4px solid #3498db; /* Solunda renkli bir çizgi */
+        padding-left: 15px;
+    }
+
+    .info-list strong {
+        color: #2c3e50; /* Önemli kısımlar daha koyu */
     }
 
     /* RESPONSIVE AYARLAR */
-    @media (max-width: 600px) {
-        .info {
-            width: 90%;
-            font-size: 18px;
+    @media (max-width: 768px) {
+        .header h1 {
+            font-size: 1.8em;
         }
-        .logo-area {
-            width: 200px;
-            height: 200px;
+        .header p {
+            font-size: 1em;
         }
-        .title-box {
-            font-size: 18px;
-            padding: 15px 20px;
+        .content-section {
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .title-box h2 {
+            font-size: 1.5em;
+        }
+        .info-list li {
+            font-size: 1em;
         }
     }
 </style>
 </head>
 <body>
 
-<div class="container">
+<div class="header">
+    <h1>ADS-352 Web Sitesi Ödevi</h1>
+    <p>2025-2026 GÜZ DÖNEMİ</p>
+</div>
+
+<div class="content-section">
 
     <div class="title-box">
-        ADS-352 <br>
-        2025-2026 GÜZ DÖNEMİ ÖDEVİ <br>
-        WEB SİTESİ OLUŞTURMA
+        <h2>Ödev Konusu: Web Sitesi Oluşturma</h2>
     </div>
 
-    <div class="logo-area">
-        LOGO
-    </div>
-
-    <div class="info">
-        * Hazırlayan: Ad - Soyad <br>
-        * Fakülte: Teknoloji Fakültesi <br>
-        * Bölüm: Elektrik Elektronik Mühendisliği <br>
-        * Sınıf: 4
-    </div>
+    <ul class="info-list">
+        <li><strong>Hazırlayan:</strong> Ad - Soyad</li>
+        <li><strong>Fakülte:</strong> Teknoloji Fakültesi</li>
+        <li><strong>Bölüm:</strong> Elektrik Elektronik Mühendisliği</li>
+        <li><strong>Sınıf:</strong> 4</li>
+    </ul>
 
 </div>
 
