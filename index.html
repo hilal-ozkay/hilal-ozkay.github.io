@@ -1,85 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ADS352</title>
-  <meta name="description" content="ADS352 dersi kapsamında oluşturulan kişisel sayfa." />
-  <style>
-    :root{
-      --bg:#0f1a18;
-      --card:#11201d;
-      --accent1:#06b6d4; /* turkuaz */
-      --accent2:#ffd700; /* altın sarısı */
-      --accent3:#556b2f; /* haki yeşil */
-      --text:#e8f0e8;
-      --muted:#a6b3a2;
-      --glass: rgba(255,255,255,0.04);
-      --radius:16px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADS-352 Web Sitesi Ödevi</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #6f89ab; /* görsele yakın mavi ton */
+        font-family: "Times New Roman", serif;
+        color: #4c0000; /* koyu bordo yazı rengi */
     }
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      background:linear-gradient(180deg, var(--bg) 0%, #0c1815 100%);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-      padding:48px 20px;
-      display:flex;
-      justify-content:center;
-      align-items:flex-start;
+    .container {
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
     }
 
-    .container{
-      width:min(900px, 96%);
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:20px;
-      padding:28px;
-      box-shadow: 0 6px 30px rgba(2,6,23,0.5), inset 0 1px 0 rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.05);
+    .title-box {
+        display: inline-block;
+        padding: 20px 40px;
+        border: 6px double #4c0000;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.1);
     }
 
-    h1{font-size:26px;margin:0;color:var(--accent1);text-align:center}
-    h2{font-size:18px;margin-top:24px;color:var(--accent2)}
-    p{color:var(--muted);font-size:15px;text-align:center;max-width:600px;margin:10px auto}
-
-    .divider{height:2px;width:80px;background:linear-gradient(90deg,var(--accent1),var(--accent2),var(--accent3));margin:16px auto;border-radius:2px}
-
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      padding:20px;border-radius:12px;margin:24px 0;
-      border:1px solid rgba(255,255,255,0.03);
+    .logo-area {
+        width: 250px;
+        height: 250px;
+        margin: 50px auto 20px auto;
+        border-radius: 50%;
+        border: 3px solid #4c0000;
+        overflow: hidden; /* taşmayı engelle ve daire içine oturt */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
     }
 
-    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+    .logo-area img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* resmi daireye tam oturtur */
+    }
 
-  </style>
+    .info {
+        margin-top: 40px;
+        text-align: left;
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+        .info {
+            width: 90%;
+            font-size: 18px;
+        }
+        .logo-area {
+            width: 200px;
+            height: 200px;
+        }
+        .title-box {
+            font-size: 18px;
+            padding: 15px 20px;
+        }
+    }
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Kişisel Sayfa</h1>
-    <div class="divider"></div>
-    <p>Bu sayfa, bir <strong>mühendislik öğrencisi</strong> tarafından <strong>ADS352</strong> dersi kapsamında oluşturulmuştur.</p>
 
-    <div class="card">
-      <h2>Hakkında</h2>
-      <p>Bu web sayfası, Açık Kaynak Yazılım Geliştirme dersi dönem ödevi için oluşturulmuştur.</p>
+<div class="container">
+
+    <div class="title-box">
+        ADS-352 <br>
+        2025-2026 GÜZ DÖNEMİ ÖDEVİ <br>
+        WEB SİTESİ OLUŞTURMA
     </div>
 
-    <div class="card">
-      <h2>İçerik</h2>
-      <p>Sayfa tasarımı minimalist bir yaklaşımla oluşturulmuş olup, renk paleti turkuaz, altın sarısı ve haki yeşil tonlarından meydana gelmektedir.</p>
+    <div class="logo-area">
+        <img src="logo.png" alt="Gazi Üniversitesi Logosu">
     </div>
 
-    <footer>© <span id="year">2025</span> • ADS352 Dersi </footer>
-  </div>
+    <div class="info">
+        * Hazırlayan: Ad - Soyad <br>
+        * Fakülte: Teknoloji Fakültesi <br>
+        * Bölüm: Elektrik Elektronik Mühendisliği <br>
+        * Sınıf: 4
+    </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+</div>
+
 </body>
 </html>
